@@ -133,7 +133,6 @@ const handler = {
   },
   set(data, prop, val) {
     if (prop !== '' && val !== '') {
-      console.log(val[0]);
       const newProp = prop.replace(' ', '').split(',');
       Object.keys(newProp).forEach((props) => {
         if (typeof (val) === 'object') {
